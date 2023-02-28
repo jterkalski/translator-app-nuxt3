@@ -1,42 +1,36 @@
-# Nuxt 3 Minimal Starter
+# Translator App (Nuxt 3)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Functionalities
 
-## Setup
+-   the application receives the text in Polish provided by the user in the `<textarea>` element,
+-   translates it into the given languages (English, German, Spanish) using [translate](https://www.npmjs.com/package/translate?activeTab=readme) package,
+-   creates a PDF file where the translation from each language is on a separate page using [pdf-lib](https://www.npmjs.com/package/pdf-lib) package,
+-   forces the PDF file download.
 
-Make sure to install the dependencies:
+## Installation
 
-```bash
-# yarn
-yarn install
+### Installing application dependencies
 
-# npm
-npm install
+Inside the application directory, dependencies should be installed by running the following command in the console (terminal):
 
-# pnpm
-pnpm install
+```
+npm ci install
 ```
 
-## Development Server
+## Development version
 
-Start the development server on http://localhost:3000
+Inside the application directory, execute the following command:
 
-```bash
+```
 npm run dev
 ```
 
-## Production
+In a web browser, open application using:
 
-Build the application for production:
-
-```bash
-npm run build
+```
+http://localhost:3000
 ```
 
-Locally preview production build:
+## Preview
 
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+![Alt Text](./readme-resources/translator-preview.gif)

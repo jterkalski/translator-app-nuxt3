@@ -1,7 +1,7 @@
 <template>
     <form>
         <label>Enter text below:</label>
-        <textarea placeholder='Type something...' v-model="form.text"></textarea>
+        <textarea placeholder='Type something...' v-model="form.text" spellcheck="false"></textarea>
         <button type="button" @click="handleSubmit">Download PDF</button>
     </form>
 </template>
