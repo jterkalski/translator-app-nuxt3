@@ -25,7 +25,7 @@ export default {
             const { data } = await useFetch('/api/text', {
                 method: 'post',
                 body: {
-                    text: this.form.text
+                    originalText: this.form.text
                 }
             })
 

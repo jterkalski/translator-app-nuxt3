@@ -10,5 +10,8 @@
   "devDependencies": {
     "@types/node": "^18.14.2",
     "nuxt": "^3.2.2"
+  },
+  "dependencies": {
+    "translate": "^1.4.1"
   }
 }
