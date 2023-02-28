@@ -6,9 +6,7 @@
     </form>
 </template>
 
-
 <script>
-
 export default {
     name: 'Home',
     data() {
@@ -42,7 +40,6 @@ export default {
         }
     }
 }
-
 </script>
 
 
