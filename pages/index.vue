@@ -7,8 +7,6 @@
 </template>
 
 
-
-
 <script>
 
 export default {
@@ -30,7 +28,16 @@ export default {
             })
 
             if (data) {
-                alert(JSON.stringify(data.value))
+                console.log(data.value);
+                const url = URL.createObjectURL(data.value);
+                const a = document.createElement('a');
+                a.style = 'display: none';
+                a.href = url;
+                a.download = 'translation.pdf';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
             }
         }
     }
